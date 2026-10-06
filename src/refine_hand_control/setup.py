@@ -25,6 +25,7 @@ setup(
     entry_points={
     'console_scripts': [
         'mujoco_bridge = refine_hand_control.mujoco_bridge:main',
+        'hand_gui = refine_hand_control.hand_gui:main',
     ],
 },
 )
