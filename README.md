@@ -182,23 +182,19 @@ sensor_msgs/msg/JointState \
 첫 번째 터미널:
 
 ```bash
-cd ~/using_robot-hand
+cd ~/Desktop/using_robot-hand
+source /opt/ros/humble/setup.bash
+colcon build --symlink-install
+source install/setup.bash
+ros2 run refine_hand_control mujoco_bridge
+```
+```bash
+cd ~/Desktop/using_robot-hand
 source /opt/ros/humble/setup.bash
 source install/setup.bash
-
-LIBGL_ALWAYS_SOFTWARE=1 \
-ros2 run refine_hand_control mujoco_bridge
-
-현재 MuJoCo 모델에서 사용하는 주요 actuator는 다음과 같습니다.
-
-```text
-index_finger
-middle_finger
-ring_finger
-little_finger
-thumb_root
-thumb
+ros2 run refine_hand_control hand_gui
 ```
+
 
 ---
 
