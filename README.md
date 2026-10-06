@@ -177,6 +177,18 @@ sensor_msgs/msg/JointState \
 "{name: ['index_finger'], position: [0.0]}"
 ```
 
+# 8. GUI 실행
+
+첫 번째 터미널:
+
+```bash
+cd ~/using_robot-hand
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+
+LIBGL_ALWAYS_SOFTWARE=1 \
+ros2 run refine_hand_control mujoco_bridge
+
 현재 MuJoCo 모델에서 사용하는 주요 actuator는 다음과 같습니다.
 
 ```text
@@ -192,18 +204,14 @@ thumb
 
 ## 현재 구현 상태
 
-```text
-[✓] MuJoCo 설치 및 실행
-[✓] ROHand 모델 표시
-[✓] ROS2 package 생성
-[✓] ROS2 -> MuJoCo bridge
-[✓] ROS2 Topic을 이용한 검지 제어
-[ ] 여러 손가락 제어 테스트
-[ ] GUI Slider 제어
-[ ] 실행 과정 간소화
-[ ] 팀원용 최종 Setup Guide
-```
-
+- [x] MuJoCo 설치 및 실행
+- [x] ROHand 모델 표시
+- [x] ROS2 package 생성
+- [x] ROS2 → MuJoCo bridge
+- [x] ROS2 Topic을 이용한 손가락 제어
+- [x] GUI Slider 제어
+- [ ] 실행 과정 간소화
+- [ ] 팀원용 최종 Setup Guide
 ---
 
 <details>
