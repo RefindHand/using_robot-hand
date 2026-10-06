@@ -180,7 +180,6 @@ sensor_msgs/msg/JointState \
 # 8. GUI 실행
 
 첫 번째 터미널:
-
 ```bash
 cd ~/Desktop/using_robot-hand
 source /opt/ros/humble/setup.bash
@@ -188,6 +187,8 @@ colcon build --symlink-install
 source install/setup.bash
 ros2 run refine_hand_control mujoco_bridge
 ```
+
+ 두 번째 터미널:
 ```bash
 cd ~/Desktop/using_robot-hand
 source /opt/ros/humble/setup.bash
